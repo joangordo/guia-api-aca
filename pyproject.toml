@@ -1,0 +1,16 @@
+# Configuració de les eines de revisió (no és un paquet instal·lable: els scripts
+# s'executen directament amb `python scripts/...`)
+[tool.ruff]
+line-length = 100
+src = ["scripts", "tests"]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["comu", "qualitat"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["scripts"]

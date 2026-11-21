@@ -1,0 +1,9 @@
+# Les dades es descarreguen amb els scripts: no es pugen al repositori
+dades/
+*.parquet
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
